@@ -21,7 +21,7 @@ export class ContactComponent implements OnInit {
  // ------------------------------------------------------------------------------------------
 
   constructor(private feedbackService: FeedbackService,
-     @Inject ('BaseURL') public BaseURL,
+    //  @Inject ('BaseURL') public BaseURL,
      private fbformbuilding: FormBuilder ) { this.createForm(); }
 
   ngOnInit() {

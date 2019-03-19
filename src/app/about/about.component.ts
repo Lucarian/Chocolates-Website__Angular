@@ -12,13 +12,15 @@ export class AboutComponent implements OnInit {
   leaders: Leader[];
 
   constructor(private leaderService: LeaderService,
-    @Inject('BaseURL') public BaseURL) { }
+
+    // @Inject('BaseURL') public BaseURL
+    ) { }
 
   ngOnInit() {
     
-    this.leaderService.getLeaders().subscribe(leaders => this.leaders = leaders);
+    // this.leaderService.getLeaders().subscribe(leaders => this.leaders = leaders);
 
-    // this.leaders = this.leaderService.getLeaders();
+    this.leaders = this.leaderService.getLeaders();
   }
 
 }
