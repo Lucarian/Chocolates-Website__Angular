@@ -6,8 +6,8 @@ import { FEEDBACKS } from '../shared/feedbacks';
 import { Observable } from 'rxjs';
 import { of } from 'rxjs';
 
-// import { HttpClient } from '@angular/common/http';
-// import { baseURL } from '../shared/baseurl';
+import { HttpClient } from '@angular/common/http';
+import { baseURL } from '../shared/baseurl';
 
 @Injectable({
   providedIn: 'root'
@@ -16,7 +16,7 @@ import { of } from 'rxjs';
 export class FeedbackService {
 
   constructor(
-    // private http: HttpClient
+    private http: HttpClient
     ) { }
 
     getFeedbacks(): Observable<Feedback[]> {
@@ -29,9 +29,13 @@ export class FeedbackService {
 
   // ------------ FOR ADDING FEEDBACKS METHOD -------------------------------
 
-    addFeedbacks(fb: Feedback): Observable<Feedback[]> {
-    return this.http.post<Feedback[]>(fb);
-  }
+  // addFeedbacks(fb: Feedback): Observable<Feedback[]> {
+  //   return this.http.post<Feedback[]>(baseURL + 'shared/feedback', fb);
+  // }
+
+  //   addFeedbacks(fb: Feedback) {
+  //    FEEDBACKS.push(fb);
+  // }
 
   // addFeedbacks(fb: Feedback): Observable<Feedback[]> {
   //   return this.http.post<Feedback[]>(baseURL + 'feedback', fb);

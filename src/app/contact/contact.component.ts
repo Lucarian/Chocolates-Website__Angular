@@ -21,7 +21,7 @@ export class ContactComponent implements OnInit {
  // ------------------------------------------------------------------------------------------
 
   constructor(private feedbackService: FeedbackService,
-    //  @Inject ('BaseURL') public BaseURL,
+     @Inject ('BaseURL') public BaseURL,
      private fbformbuilding: FormBuilder ) { this.createForm(); }
 
   ngOnInit() {
@@ -35,24 +35,51 @@ export class ContactComponent implements OnInit {
     this.feedbackForm = this.fbformbuilding.group({
       firstname: '',
       lastname: '',
-      message: ''
+      areacode: '',
+      telnum: '',
+      emailid: '',
+      checkbox: '',
+      select: '',
+      feedback: '',
+
     });
   }
 
-  onSubmitFeedback() {
+
+
+
+
+
+
+
+
+
+
+
+  // createForm() {
+  //   this.feedbackForm = this.fbformbuilding.group({
+  //     firstname: '',
+  //     lastname: '',
+  //     message: ''
+  //   });
+  // }
+
+  // onSubmitFeedback() {
     
-    this.fb = this.feedbackForm.value;
-    this.fb.date = new Date().toISOString();
+  //   this.fb = this.feedbackForm.value;
+  //   this.fb.date = new Date().toISOString();
 
-    console.log(this.fb);
-    this.feedbacks.push(this.fb);
+  //   console.log(this.fb);
+  //   this.feedbacks.push(this.fb);
 
-    this.feedbackService.addFeedbacks(this.fb).subscribe();
-    this.feedbackForm.reset({
-      firstname: '',
-      lastname: '',
-      message: ''
-    });
-  }
+  //   // this.feedbackService.addFeedbacks(this.fb);
+  //   // this.feedbackService.addFeedbacks(this.fb).subscribe();
+
+  //   this.feedbackForm.reset({
+  //     firstname: '',
+  //     lastname: '',
+  //     message: ''
+  //   });
+  // }
 
 }
