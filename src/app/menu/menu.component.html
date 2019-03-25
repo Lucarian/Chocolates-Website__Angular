@@ -18,22 +18,22 @@
   </div>
 
   <!--------------- HEADING & MEDIA DIVS --------------------->
-  <div class="row">
+  <div class="row mb-4">
 
     <h4 class="col-12">Our famous chocolates</h4>
 
-    <div class="media" *ngFor="let dish of dishes" [routerLink]="['/dishdetail', dish.id]">
+    <div class="media ml-3 mb-1" *ngFor="let dish of dishes" [routerLink]="['/dishdetail', dish.id]">
 
-      <img class=" img-thumbnail align-self-end" src="{{dish.image}}" alt={{dish.name}}>
+      <img class="img-thumbnail align-self-end" src="{{dish.image}}" alt={{dish.name}}>
 
       <div class="media-body">
 
-        <h5 class="mt-4">{{dish.name | uppercase}}
+        <h5 class="mt-4 ml-2">{{dish.name | uppercase}}
           <span class="badge badge-danger">{{dish.label}}</span>
           <span class="badge badge-pill badge-success">{{dish.price}}</span>
         </h5>
 
-        <p class="col d-none d-sm-block">
+        <p class="d-none d-sm-block ml-2">
           {{dish.description}}
         </p>
 

@@ -87,3 +87,57 @@ body {
 .pano-orio {
     margin-top: 19px;
 }
+
+
+/*-------------- TABLE ROW COLOURS --------------------*/
+
+.color-1 {
+    background-color: lemonchiffon;
+}
+
+.color-2 {
+    background-color: rgba(119, 18, 18, 0.644);
+}
+
+.color-3 {
+    background-color:lightyellow;
+}
+
+.color-4 {
+    background-color: rgb(199, 70, 70);
+}
+
+.color-5 {
+    background-color: rgb(204, 72, 32);
+}
+
+.color-6 {
+    background-color: rgb(135, 240, 65);
+}
+
+.color-7 {
+    background-color: rgb(244, 247, 94);
+}
+
+#table-knowledge td {
+    border-top-color: black;
+    border-bottom-color: black;
+}
+
+#table-knowledge {
+    font-size: 18px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#table-knowledge {
+    border: 6px solid rgba(235, 160, 160, 0.87);
+}
+
+#table-knowledge tr td:first-child,#table-knowledge tr th:first-child,#table-knowledge tr td:nth-child(3),#table-knowledge tr th:nth-child(3) {
+    border-right: 1px solid;
+}
+
+.table .thead-dark th {
+    color:floralwhite;
+    background-color:#6E3F19;
+}

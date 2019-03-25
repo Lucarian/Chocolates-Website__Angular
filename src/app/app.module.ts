@@ -15,6 +15,7 @@ import { FooterComponent } from './footer/footer.component';
 import { AboutComponent } from './about/about.component';
 import { HomeComponent } from './home/home.component';
 import { ContactComponent } from './contact/contact.component';
+import { KnowledgeComponent } from './knowledge/knowledge.component';
 
 import { baseURL } from './shared/baseurl';
 
@@ -30,7 +31,8 @@ import { ReactiveFormsModule } from '@angular/forms';
     FooterComponent,
     AboutComponent,
     HomeComponent,
-    ContactComponent
+    ContactComponent,
+    KnowledgeComponent
   ],
   imports: [
     BrowserModule,
