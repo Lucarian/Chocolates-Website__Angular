@@ -133,7 +133,7 @@ body {
     border: 6px solid rgba(235, 160, 160, 0.87);
 }
 
-#table-knowledge tr td:first-child,#table-knowledge tr th:first-child,#table-knowledge tr td:nth-child(3),#table-knowledge tr th:nth-child(3) {
+#table-knowledge tr td:first-child,#table-knowledge tr th:first-child,#table-knowledge tr td:nth-child(2),#table-knowledge tr th:nth-child(2) {
     border-right: 1px solid;
 }
 
